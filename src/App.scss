@@ -1,0 +1,30 @@
+.App {
+    font-family: sans-serif;
+
+    .Header {
+        font-size: 24px;
+
+        margin: 12px;
+        margin-bottom: 24px;
+    }
+
+    .Footer {
+        color: lightgray;
+        
+        margin: 12px;
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .App {
+        width: 100%;
+    }
+
+}
+@media (min-width: 451px) {
+    .App {
+        width: 385px;
+    }
+}
