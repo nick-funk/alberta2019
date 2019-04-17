@@ -32,15 +32,13 @@ class App extends Component {
         request.then(response => {
             response.json().then(json => {
 
-                console.log(json);
-
                 this.setState({
                     parties: json
                 });
 
                 setTimeout(
                     this.reloadDelegate,
-                    1000
+                    5000
                 );
             });
         });
