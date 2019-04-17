@@ -7,6 +7,7 @@ class ProgressBar extends Component {
     render() {
         return (
             <div className="ProgressBar">
+                <div className="ColorBar" style={ this.computeColorBarStyle() }></div>
                 <div className="Title">{ this.props.name }</div>
                 <div className="Bar">
                     <div className="Fill" style={ this.computeFillStyle() }></div>
@@ -17,6 +18,12 @@ class ProgressBar extends Component {
                 </div>
             </div>
         );
+    }
+
+    computeColorBarStyle() {
+        return {
+            background: this.props.color
+        };
     }
 
     computeFillStyle() {
