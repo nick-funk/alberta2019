@@ -68,7 +68,7 @@ class App extends Component {
 
         this.state.parties.forEach((party, index) => {
 
-            var seatsWon = party.Net;
+            var seatsWon = party.Elected;
 
             partyBars.push(
                 <ProgressBar 
