@@ -88,7 +88,7 @@ class App extends Component {
 
         return (
             <div className="App">
-                <div className="Header">Alberta 2019</div>
+                <div className="Header">Alberta 2019 Election</div>
                 { partyBars }
                 <div className="Footer">44 needed for majority.</div>
             </div>
