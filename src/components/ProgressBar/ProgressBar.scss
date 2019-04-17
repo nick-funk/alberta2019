@@ -3,31 +3,44 @@
     margin: 12px;
     width: 100%;
 
-    .ColorBar {
-        position: absolute;
-        top: 0;
-        left: 0;
+    
 
-        width: 16px;
-        height: 16px;
-
-        border-radius: 12px;
-    }
-
-    .Title {
-        display: inline-block;
-        width: calc(100% - 80px);
+    .TitleArea {
+        position: relative;
         height: 20px;
+        width: 100%;
 
-        font-size: 16px;
-
-        margin-left: 25px;
         margin-bottom: 12px;
 
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
+        .ColorBar {
+            position: absolute;
+            top: 0;
+            left: 0;
+    
+            width: 20px;
+            height: 20px;
+    
+            border-radius: 12px;
+        }
+
+        .Title {
+            position: absolute;
+            left: 28px;
+            top: 2px;
+
+            display: inline-block;
+            width: calc(100% - 80px);
+            height: 20px;
+    
+            font-size: 16px;
+    
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
     }
+
+    
 
     .Bar {
         position: relative;
