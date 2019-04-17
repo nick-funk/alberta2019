@@ -68,16 +68,16 @@ class App extends Component {
 
         this.state.parties.forEach((party, index) => {
 
-            var elected = party.Elected;
+            var seatsWon = party.Net;
 
             partyBars.push(
                 <ProgressBar 
                     key={ index }
                     name={ `${party.ShortName_En} - ${party.Name_En}` }
-                    percent={ elected / this.state.totalRidings }
+                    percent={ seatsWon / this.state.totalRidings }
                     markerPercent={ this.state.majority / this.state.totalRidings }
                     color={ this.partyColor(party.Name_En) }
-                    value={ elected }
+                    value={ seatsWon }
                     total={ this.state.totalRidings }
                 >
                 </ProgressBar>
